@@ -15,21 +15,12 @@ import javafx.stage.Stage;
  *
  * @author Daniel Cordoba Paez <dcordob@wgu.edu>
  */
-public class Pomodoro extends Application {
+public class Pomodoro {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        launch(args);
-    }
-    
-    @Override
-    public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("/view/pomodoro_home.fxml"));
-        Scene scene = new Scene(root);
-        stage.setScene(scene);
-        stage.setTitle("Pomodoro Timer");
-        stage.show();
+        PomodoroApp.main(args);
     }
 }

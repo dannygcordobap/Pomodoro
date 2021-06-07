@@ -77,7 +77,6 @@ public class MainController implements Initializable {
         Timer timer = new Timer();
         
         int delay = 60000;
-        int period = 1000;
         long breakDuration = Long.parseLong(breakTime.getText());
         long workDuration = Long.parseLong(workingTime.getText());
         
@@ -184,7 +183,7 @@ public class MainController implements Initializable {
                     }
                 });
             }
-        }, delay, period);
+        }, 1000, delay);
     }
     
     

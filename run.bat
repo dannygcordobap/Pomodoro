@@ -2,4 +2,6 @@
 
 cd store
 
-java -jar Pomodoro.jar
+start javaw -jar "Pomodoro.jar"
+
+exit
